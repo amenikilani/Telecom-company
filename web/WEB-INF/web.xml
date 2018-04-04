@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- SMTP settings -->
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>smtp.gmail.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>587</param-value>
+    </context-param>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>tryinthismail@gmail.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>123456789TryInThisMail</param-value>
+    </context-param>
+
+
+
+    <servlet>
+        <servlet-name>EnvoyerMail</servlet-name>
+        <servlet-class>com.servlet.EnvoyerMail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnvoyerMail</servlet-name>
+        <url-pattern>/EnvoyerMail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.servlet.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreerAbonnée</servlet-name>
+        <servlet-class>com.servlet.CreerAbonnée</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreerAbonnée</servlet-name>
+        <url-pattern>/CreerAbonnée</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreerFacture</servlet-name>
+        <servlet-class>com.servlet.CreerFacture</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreerFacture</servlet-name>
+        <url-pattern>/CreerFacture</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreerService</servlet-name>
+        <servlet-class>com.servlet.CreerService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreerService</servlet-name>
+        <url-pattern>/CreerService</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreerSim</servlet-name>
+        <servlet-class>com.servlet.CreerSim</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreerSim</servlet-name>
+        <url-pattern>/CreerSim</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreerEmployé</servlet-name>
+        <servlet-class>com.servlet.CreerEmployé</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreerEmployé</servlet-name>
+        <url-pattern>/CreerEmployé</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ChercherFacture</servlet-name>
+        <servlet-class>com.servlet.ChercherFacture</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChercherFacture</servlet-name>
+        <url-pattern>/ChercherFacture</url-pattern>
+    </servlet-mapping>
+
+</web-app>
